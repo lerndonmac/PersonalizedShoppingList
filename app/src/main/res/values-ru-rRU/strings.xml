@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Бухгалтерия</string>
+    <string name="add_but">ДОБАВИТЬ</string>
+    <string name="sett_set_buget">Установить бюджет</string>
+    <string name="sett_del_all_wastes">Удалить все траты</string>
+    <string name="ed_name_of_waste">Название траты</string>
+    <string name="ed_cost_of_waste">стоимость траты</string>
+    <string name="ed_confirm_but">подтвердить</string>
+    <string name="ed_delete_but">удалить</string>
+</resources>

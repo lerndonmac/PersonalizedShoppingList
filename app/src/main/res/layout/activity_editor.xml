@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ed_name_of_waste" />
+
+    <EditText
+        android:id="@+id/textVName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textname"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textcost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textVName"
+        android:text="@string/ed_cost_of_waste" />
+
+    <EditText
+        android:id="@+id/textVCost"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textcost"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incrBut"
+        android:text="@string/ed_confirm_but" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incrBut"
+        android:layout_alignEnd="@id/button"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#FF0000"
+        android:text="@string/ed_delete_but"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textVCost"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/dicrBut"
+        android:editable="true"
+        android:padding="5dp"
+        android:text="1"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/incrBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textVCost"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/countTextView"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/dicrBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textVCost"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="-" />
+
+</RelativeLayout>
